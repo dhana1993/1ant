@@ -1,6 +1,6 @@
 class Hello1
 {
-   public static voi main(String args[])
+   public static void main(String args[])
    {
       System.out.println("hello from class1");
    }
