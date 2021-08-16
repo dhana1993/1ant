@@ -64,9 +64,7 @@ table, th, td {
           </tr>
           <tr>
             <td><b>Build cause:</b></td>
-            <td>
-              <j:forEach var="cause" items="${build.causes}">${cause.shortDescription}
-              </j:forEach>
+            <td> ${build.causes}
             </td>
 </table>
 
