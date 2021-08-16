@@ -1,17 +1,47 @@
-<table style="width:100%">
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<!--<h2>JENKINS BUILD RESULT</h2>-->
+<div class='container2'>
+        <div class="left">
+            <img src="${WORK_SPACE}\\img\\jenkins.png" class='iconDetails'>
+        </div>  
+    <div   class="right" >
+    <h4>Facebook</h4>
+    
+    </div>
+</div>
+
+<table>
   <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Age</th>
+    <th>Key</th>
+    <th>Value</th>
   </tr>
   <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
+    <td>Jenkins job Name</td>
+    <td>${JOB_NAME}</td>
   </tr>
   <tr>
-    <td>$JOB_NAME</td>
-    <td>Jackson</td>
-    <td>94</td>
+  <tr>
+    <td>Build status</td>
+    <td><div class="left">
+            <img src="${WORK_SPACE}\\img\\download.png" class='iconDetails'>
+        </div></td>
+    
   </tr>
+    <td>Sonarqube URL</td>
+    <td><a href="url">http://localhost:9000/dashboard?id=${SONAR_NAME}</a></td>
+    
 </table>
+
+</body>
+</html>
