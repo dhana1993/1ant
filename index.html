@@ -13,10 +13,10 @@ table, th, td {
 <!--<h2>JENKINS BUILD RESULT</h2>-->
 <div class='container2'>
         <div class="left">
-            <img src="https://www.example.com/images/dinosaur.jpg">
+            <img src="img/jenkins.png">
         </div>  
     <div   class="right" >
-    <h4>Jenkins Build Report</h4>
+    <h3>Jenkins Build Report</h3>
     
     </div>
 </div>
@@ -31,6 +31,24 @@ table, th, td {
     <td>${JOB_NAME}</td>
   </tr>
   <tr>
+    <td>Build Number</td>
+    <td>${BUILD_NUMBER}</td>
+  </tr>
+   <tr>
+    <td>GIT Baranch</td>
+    <td>${GIT_BRANCH}</td>
+  </tr>
+  <tr>
+    <td>GIT URL</td>
+    <td>${GIT_URL}</td>
+  </tr>
+  
+    <tr>
+    <td>Build URL</td>
+    <td>${BUILD_URL}</td>
+  </tr>
+  
+  
   <tr>
     <td>Build status</td>
     <td><div class="left">
