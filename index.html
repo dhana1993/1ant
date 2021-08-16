@@ -7,6 +7,9 @@ table, th, td {
   border: 1px solid black;
 }
 </style>
+  <script>
+        var val = ${SONAR_NAME};
+    </script>
 </head>
 <body>
 
@@ -50,7 +53,10 @@ table, th, td {
     
   </tr>
     <td>Sonarqube URL</td>
-    <td><a href="url">"http://localhost:9000/dashboard?id=${SONAR_NAME}"</a></td>
+    <td>   <a href="http://localhost:9000/dashboard"
+onclick="location.href=this.href+'?id='+val;return false;">
+     sonar link
+</a></td>
     
 </table>
 
