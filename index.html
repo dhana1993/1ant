@@ -50,9 +50,24 @@ table, th, td {
     <td style="background-color:#47d147"></td>
     
   </tr>
-    <td>Sonarqube URL</td>
+  <tr>  
+  <td>Sonarqube URL</td>
     <td><a href="http://localhost:9000/dashboard?id=email-test">Sonar URL</a></td>
-    
+    </tr>
+  <tr>
+            <td><b>Date of build:</b></td>
+            <td>${it.timestampString}</td>
+          </tr>
+          <tr>
+            <td><b>Build duration:</b></td>
+            <td>${build.durationString}</td>
+          </tr>
+          <tr>
+            <td><b>Build cause:</b></td>
+            <td>
+              <j:forEach var="cause" items="${build.causes}">${cause.shortDescription}
+              </j:forEach>
+            </td>
 </table>
 
 </body>
