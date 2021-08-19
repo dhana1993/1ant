@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
-<!--<head>
+<head>
 <style>
 table, th, td {
 
-  padding:2px;
-   margin: 2px;
+  border: 1px solid black;
 }
 </style>
-  <script>
+ <!-- <script>
         var val = email-test ;
-    </script>
+    </script>-->
 </head>
 <body>
 
-<!--<h2>JENKINS BUILD RESULT</h2>
+<!--
 <div class='container2'>
         <div class="left">
             <img src="img/jenkins.png">
         </div>  
     <div   class="right" >
-    <h3>Jenkins Build Report</h3>
+    
     
     </div>
 </div>
-
+-->
+<h3>Jenkins Build Report</h3>
 <table>
   <tr>
     <th>Key</th>
@@ -51,15 +51,23 @@ table, th, td {
     <td style="background-color:#47d147"></td>
     
   </tr>
+  
+  <tr>
+    <td>Current Build Duration</td>
+    <td>${currentBuild.durationString}</td>
+  </tr>
+  
+   <tr>
+    <td>Cause:</td>
+    <td>Started by user ${whoami}</td>
+  </tr>
+  
   <tr>  
   <td>Sonarqube URL</td>
-    <td><a href="http://localhost:9000/dashboard?id=email-test">Sonar URL</a></td>
-    </tr>--
+    <td><a href="https://sonarqube.religarehealthinsurance.com/dashboard/index/Faveoui_QC">Sonar URL</a></td>
+    </tr>
         
-</table>-->
-  ${JELLY_SCRIPT,template="detailed_email"}
-  <b>&ensp;Sonarqube URL:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;</b><a href="http://localhost:9000/dashboard?id=email-test">http://localhost:9000/dashboard?id=email-test</a></td>
-    
+</table>
 
 </body>
 </html>
